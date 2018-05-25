@@ -17,6 +17,10 @@ export default class MapContainer extends Component {
     ]
   }
 
+  componentDidMount() {
+    this.loadMap(); // call loadMap function to load the google map upon mounting the component
+  }
+
   componentDidUpdate() {
     this.loadMap(); // call loadMap function to load the google map
   }
